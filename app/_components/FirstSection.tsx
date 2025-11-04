@@ -33,7 +33,7 @@ function FirstSection() {
 
     return (
         <>
-            <section className="bg-dark-950 min-h-screen h-auto md:h-screen snap-start snap-always flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 px-4 sm:px-6 md:px-12 py-12 md:py-0">
+            <section className="overflow-x-hidden bg-dark-950 min-h-screen h-auto md:h-screen snap-start snap-always flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 px-4 sm:px-6 md:px-12 py-12 md:py-0">
                 <div className="flex flex-col gap-6 md:gap-8 w-full md:w-2/5 text-center md:text-left">
                     <p className="text-white/90 text-3xl sm:text-4xl md:text-5xl font-bold">Consigue resultados excepcionales con Agend.</p>
                     <div>

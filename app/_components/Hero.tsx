@@ -12,7 +12,7 @@ function Hero() {
 
     return (
         <>
-            <header className="h-screen snap-start snap-always">
+            <header className="h-screen snap-start snap-always overflow-x-hidden">
                 <section className="flex flex-col h-full w-full bg-gradient-ground-200">
                     <Navbar />
                     <article className="flex flex-col gap-4 md:gap-8 flex-1 justify-center items-center text-center mt-16 md:!mt-32 px-4 md:px-8">

@@ -24,7 +24,7 @@ function Home() {
 
     
   return (
-    <div className={`h-screen overflow-y-scroll ${isMobile ? "snap-none" : "snap-y snap-mandatory"}`}>
+    <div className={`h-screen overflow-x-hidden overflow-y-scroll ${isMobile ? "snap-none" : "snap-y snap-mandatory"}`}>
       <Hero />
       <FirstSection />
     </div>
