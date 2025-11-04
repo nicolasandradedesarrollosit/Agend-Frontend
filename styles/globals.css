@@ -20,6 +20,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  text-indent: 10px
+}
+
 .link-underline-delay {
   text-decoration: none;
   transition: text-decoration 150ms ease-in-out;
