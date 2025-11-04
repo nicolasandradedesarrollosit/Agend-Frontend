@@ -1,7 +1,13 @@
-export default function Home() {
+import Hero from "@/component/home/Hero";
+import FirstSection from "@/component/home/FirstSection";
+
+function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      
-    </section>
-  );
+    <>
+      <Hero />
+      <FirstSection />
+    </>
+  )
 }
+
+export default Home;

@@ -1,3 +1,34 @@
 @import "tailwindcss";
 
-@config "../tailwind.config.js"
+@config "../tailwind.config.js";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link-underline-delay {
+  text-decoration: none;
+  transition: text-decoration 150ms ease-in-out;
+}
+
+.link-underline-delay:hover {
+  text-decoration: underline;
+}
+
+.text-shadow-primary {
+  text-shadow: 2px 2px 4px rgba(168, 85, 247, 0.3);
+}

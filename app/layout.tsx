@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: '/logo.png',
   },
 };
 
@@ -40,9 +40,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <main className="container mx-auto max-w-7xl px-6 py-8">
-            {children}
-          </main>
+          {children}
         </Providers>
       </body>
     </html>
