@@ -67,10 +67,10 @@ function Hero() {
                             </p>
                         </div>
                         <div className="flex flex-row gap-6 !mt-12">
-                            <Button size="lg" color="secondary" variant="ghost" className="!px-4">
+                            <Button size="lg" color="secondary" variant="ghost" className="!px-4 text-white/90">
                                 Registrarse
                             </Button>
-                            <Button size="lg" color="secondary" variant="solid" className="!px-4 text-black/50">
+                            <Button size="lg" color="secondary" variant="solid" className="!px-4 text-black/90">
                                 Contacto
                             </Button>
                         </div>

@@ -1,5 +1,5 @@
-import Hero from "@/component/home/Hero";
-import FirstSection from "@/component/home/FirstSection";
+import Hero from "@/app/_components/Hero";
+import FirstSection from "@/app/_components/FirstSection";
 
 function Home() {
   return (
