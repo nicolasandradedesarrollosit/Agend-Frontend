@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from "@/app/_components/Hero";
 import FirstSection from "@/app/_components/FirstSection";
 
