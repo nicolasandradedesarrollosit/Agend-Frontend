@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react'
 function Navbar() {
 
     const [currentPath, setCurrentPath] = useState("");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
             setCurrentPath(window.location.pathname)
@@ -26,28 +27,75 @@ function Navbar() {
 
     return (
         <>
-            <nav className="flex flex-row w-full h-[10vh] justify-evenly items-center px-8 bg-transparent">
-                <div>
-                    <p className="text-2xl font-bold text-black">AGEND</p>
-                </div>
-                <div className="flex flex-row gap-10 items-center">
-                    <Link underline={currentPath === "/" ? "always" : "hover"} href="/"  className="text-black/80 transition delay-150 hover:text-black font-medium transition-colors">
-                        Inicio
-                    </Link>
-                    <Link underline={currentPath === "/about" ? "always" : "none"} href="/about" className="text-black/80 transition delay-150 hover:text-black font-medium transition-colors">
-                        Sobre Nosotros
-                    </Link>
-                    <Button 
-                        as={Link}
-                        href="/auth"
-                        className="bg-black text-white w-55 font-semibold rounded-lg hover:bg-black/90 transition-colors" 
-                        variant="solid"
-                        endContent={icon}
+            <div className="relative w-full">
+                <nav className="flex flex-row w-full min-h-[10vh] justify-between md:justify-evenly items-center px-6 md:px-8 bg-transparent max-w-screen-xl mx-auto">
+                    <div>
+                        <p className="text-xl md:text-2xl font-bold text-black">AGEND</p>
+                    </div>
+                    
+                    <button 
+                        className="md:hidden flex flex-col gap-1.5 !mr-4 p-2"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        aria-label="Toggle menu"
                     >
-                        Iniciar Sesion | Registrarse
-                    </Button>
-                </div>
-            </nav>
+                        <span className="w-6 h-0.5 bg-black"></span>
+                        <span className="w-6 h-0.5 bg-black"></span>
+                        <span className="w-6 h-0.5 bg-black"></span>
+                    </button>
+
+                    <div className="hidden md:flex flex-row gap-10 items-center">
+                        <Link underline={currentPath === "/" ? "always" : "hover"} href="/"  className="text-black/80 transition delay-150 hover:text-black font-medium transition-colors">
+                            Inicio
+                        </Link>
+                        <Link underline={currentPath === "/about" ? "always" : "none"} href="/about" className="text-black/80 transition delay-150 hover:text-black font-medium transition-colors">
+                            Sobre Nosotros
+                        </Link>
+                        <Button 
+                            as={Link}
+                            href="/auth"
+                            size="md"
+                            className="bg-black text-white font-semibold rounded-lg hover:bg-black/90 transition-colors !px-4" 
+                            variant="solid"
+                            endContent={icon}
+                        >
+                            Iniciar Sesion | Registrarse
+                        </Button>
+                    </div>
+                </nav>
+
+                {isMenuOpen && (
+                    <div className="md:hidden absolute top-full left-1/2 -translate-x-1/2 w-9/10 bg-black shadow-2xl z-1 flex justify-center rounded-xl !p-4">
+                        <div className="flex flex-col items-center gap-3 py-4 px-6 w-full max-w-sm">
+                            <Link 
+                                underline={currentPath === "/" ? "always" : "hover"} 
+                                href="/"  
+                                className="text-white/90 hover:text-white font-medium transition-colors text-sm py-1"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Inicio
+                            </Link>
+                            <Link 
+                                underline={currentPath === "/about" ? "always" : "none"} 
+                                href="/about" 
+                                className="text-white/90 hover:text-white font-medium transition-colors text-sm py-1"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Sobre Nosotros
+                            </Link>
+                            <Button 
+                                as={Link}
+                                href="/auth"
+                                size="lg"
+                                className="bg-white text-black font-semibold rounded-lg hover:bg-white/90 transition-colors w-4/5 mt-1 h-30s" 
+                                variant="solid"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Iniciar Sesion
+                            </Button>
+                        </div>
+                    </div>
+                )}
+            </div>
         </>
     )
 }
