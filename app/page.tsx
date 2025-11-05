@@ -2,6 +2,7 @@
 
 import Hero from "@/app/_components/Hero";
 import FirstSection from "@/app/_components/FirstSection";
+import SecondSection from "@/app/_components/SecondSection";
 import ThirdSection from "@/app/_components/ThirdSection";
 
 import {
@@ -28,7 +29,10 @@ function Home() {
     <div className={`h-screen overflow-x-hidden overflow-y-scroll ${isMobile ? "snap-none" : "snap-y snap-mandatory"}`}>
       <Hero />
       <FirstSection />
-      <ThirdSection />
+      <div className="bg-gradient-ground-500 h-auto w-full">
+        <SecondSection />
+        <ThirdSection />
+      </div>
     </div>
   )
 }

@@ -39,7 +39,7 @@ function ThirdSection() {
 
     return (
         <>
-            <section className="overflow-x-hidden h-screen w-full flex flex-col items-center bg-gradient-ground-500 snap-start snap-always">
+            <section className="overflow-x-hidden h-screen w-full flex flex-col items-center snap-start snap-always">
                 <div className="flex flex-col items-center h-[75vh] w-full px-6 sm:px-8 md:px-12 lg:px-16">
                     <p className="text-3xl sm:text-4xl md:text-5xl font-semibold !mt-12 text-white/90 text-center">Preguntas frecuentes</p>
                     <div className="!mt-12 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 max-w-3xl">

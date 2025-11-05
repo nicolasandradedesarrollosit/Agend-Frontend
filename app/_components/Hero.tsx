@@ -31,7 +31,7 @@ function Hero() {
                             <Button size="lg" color="secondary" variant="ghost" className="!px-4 w-4/5 sm:w-auto">
                                 Registrarse
                             </Button>
-                            <Button size="lg" color="secondary" variant="solid" className="!px-4 text-black/90 w-4/5 sm:w-auto">
+                            <Button size="lg" color="secondary" variant="flat" className="!px-4 text-black/90 w-4/5 sm:w-auto">
                                 Contacto
                             </Button>
                         </div>

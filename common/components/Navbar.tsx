@@ -28,7 +28,7 @@ function Navbar() {
     return (
         <>
             <div className="relative w-full">
-                <nav className="flex flex-row w-full min-h-[10vh] justify-between md:justify-evenly items-center px-6 md:px-8 bg-transparent max-w-screen-xl mx-auto">
+                <nav className="flex flex-row w-full min-h-[10vh] justify-between md:justify-evenly items-center px-6 md:px-12 lg:px-20 xl:px-32 bg-transparent">
                     <div>
                         <p className="text-xl md:text-2xl font-bold text-black">AGEND</p>
                     </div>

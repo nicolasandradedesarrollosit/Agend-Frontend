@@ -32,7 +32,7 @@ function Footer() {
                         <Link className="text-xs md:text-sm" color="foreground">Documentacion</Link>
                     </div>
                 </div>
-                <div className="w-full h-1/2 md:h-2/5 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
+                <div className="w-4/5 h-1/2 md:h-2/5 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
                     <div className="flex flex-col text-center md:text-left">
                         <p className="text-white/70 font-semibold text-xs md:text-sm">© 2024 Agend. Todos los derechos reservados.</p>
                         <p className="text-white/50 text-xs md:text-sm">Powered by <a className="font-bold text-white" href="https://andart-coral.vercel.app">© Andart</a></p>
